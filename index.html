@@ -1,1161 +1,529 @@
 <!DOCTYPE html>
+<html lang="en">
 
-
-
-  
-
-
-<html class="theme-next muse use-motion" lang="">
+<!-- Head tag -->
 <head>
-  <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-<meta name="theme-color" content="#222">
-
-
-
-
-
-
-
-
-
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
-
-
-
-
-
-
-
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
-
-<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
-
-
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
-
-
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
-
-
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
-
-
-  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
-
-
-
-
-
-  <meta name="keywords" content="Hexo, NexT" />
-
-
-
-
-
-
-
-
-
-
-<meta name="description" content="这是我的个人博客 我会在里面分享自己看过好的艺术作品，包括书目，电影和音乐，同时也会谈谈自己对这些作品的简单看法。我是非艺术专业出身，写博客纯属个人爱好，博客内容也全属个人观点（包括我自己听来或看来，觉尚可的观点）。博客的主旨在分享，但不限于次，更新内容可能会因日后生活或工作发生改变。">
-<meta property="og:type" content="website">
-<meta property="og:title" content="knight-luo’s heaven">
-<meta property="og:url" content="http://yoursite.com/index.html">
-<meta property="og:site_name" content="knight-luo’s heaven">
-<meta property="og:description" content="这是我的个人博客 我会在里面分享自己看过好的艺术作品，包括书目，电影和音乐，同时也会谈谈自己对这些作品的简单看法。我是非艺术专业出身，写博客纯属个人爱好，博客内容也全属个人观点（包括我自己听来或看来，觉尚可的观点）。博客的主旨在分享，但不限于次，更新内容可能会因日后生活或工作发生改变。">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="knight-luo’s heaven">
-<meta name="twitter:description" content="这是我的个人博客 我会在里面分享自己看过好的艺术作品，包括书目，电影和音乐，同时也会谈谈自己对这些作品的简单看法。我是非艺术专业出身，写博客纯属个人爱好，博客内容也全属个人观点（包括我自己听来或看来，觉尚可的观点）。博客的主旨在分享，但不限于次，更新内容可能会因日后生活或工作发生改变。">
-
-
-
-<script type="text/javascript" id="hexo.configurations">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    root: '/',
-    scheme: 'Muse',
-    version: '5.1.4',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
-    fancybox: true,
-    tabs: true,
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
-    duoshuo: {
-      userId: '0',
-      author: 'Author'
-    },
-    algolia: {
-      applicationID: '',
-      apiKey: '',
-      indexName: '',
-      hits: {"per_page":10},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
-    }
-  };
-</script>
-
-
-
-  <link rel="canonical" href="http://yoursite.com/"/>
-
-
-
-
-
-  <title>knight-luo’s heaven</title>
-  
-
-
-
-
-
-
-
-
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="这是我的个人博客 我会在里面分享自己看过好的艺术作品，包括书目，电影和音乐，同时也会谈谈自己对这些作品的简单看法。我是非艺术专业出身，写博客纯属个人爱好，博客内容也全属个人观点（包括我自己听来或看来，觉尚可的观点）。博客的主旨在分享，但不限于次，更新内容可能会因日后生活或工作发生改变。">
+    <meta name="keyword"  content="">
+    <link rel="shortcut icon" href="/img/ironman-draw.png">
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <title>
+        
+          
+        
+    </title>
+
+    <link rel="canonical" href="http://yoursite.com/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS --> 
+    <link rel="stylesheet" href="/css/beantech.min.css">
+    
+    <!-- Pygments Highlight CSS -->
+    <link rel="stylesheet" href="/css/highlight.css">
+
+    <link rel="stylesheet" href="/css/widget.css">
+
+    <link rel="stylesheet" href="/css/rocket.css">
+
+    <link rel="stylesheet" href="/css/signature.css">
+
+    <link rel="stylesheet" href="/css/toc.css">
+
+    <!-- Custom Fonts -->
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <!-- Hux change font-awesome CDN to qiniu -->
+    <link href="https://cdn.staticfile.org/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+    <!-- Hux Delete, sad but pending in China
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/
+    css'>
+    -->
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- ga & ba script hoook -->
+    <script></script>
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="">
 
-  
-  
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
+	<!-- Modified by Yu-Hsuan Yen -->
+<!-- Post Header -->
+<style type="text/css">
+    header.intro-header{
+        
+            background-image: url('/undefined') 
+            /*config*/
+        
+    }
     
-  
+</style>
 
-  <div class="container sidebar-position-left 
-  page-home">
-    <div class="headband"></div>
+<header class="intro-header" >
+    <!-- Signature -->
+    <div id="signature">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                
+                    <div class="site-heading">
+                        <h1>knight-luo’s heaven</h1>
+                        <!--<hr class="small">-->
+                        <span class="subheading">漫说成长 闲话心事</span>
+                    </div>
+                
 
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-wrapper">
-  <div class="site-meta ">
-    
 
-    <div class="custom-logo-site-title">
-      <a href="/"  class="brand" rel="start">
-        <span class="logo-line-before"><i></i></span>
-        <span class="site-title">knight-luo’s heaven</span>
-        <span class="logo-line-after"><i></i></span>
-      </a>
+                </div>
+            </div>
+        </div>
     </div>
-      
-        <p class="site-subtitle">漫说成长 闲话心事</p>
-      
-  </div>
+</header>
 
-  <div class="site-nav-toggle">
-    <button>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-    </button>
-  </div>
-</div>
+	
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">knight-luo’s heaven</a>
+        </div>
 
-<nav class="site-nav">
-  
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
 
-  
-    <ul id="menu" class="menu">
-      
-        
-        <li class="menu-item menu-item-home">
-          <a href="/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
-            
-            Startseite
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-archives">
-          <a href="/archives/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
-            
-            Archiv
-          </a>
-        </li>
-      
-
-      
-    </ul>
-  
-
-  
+                    
+                    
+                </ul>
+            </div>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
 </nav>
-
-
-
- </div>
-    </header>
-
-    <main id="main" class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          <div id="content" class="content">
-            
-  <section id="posts" class="posts-expand">
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/01/11/actress1/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="knight-luo">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="knight-luo’s heaven">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/01/11/actress1/" itemprop="url">actress1</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Veröffentlicht am</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-01-11T20:53:42+08:00">
-                2018-01-11
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h2 id="沉沦——从你开始"><a href="#沉沦——从你开始" class="headerlink" title="沉沦——从你开始"></a>沉沦——从你开始</h2>
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/01/10/youth/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="knight-luo">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="knight-luo’s heaven">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/01/10/youth/" itemprop="url">朦胧 —— 方成艺术</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Veröffentlicht am</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-01-10T00:00:00+08:00">
-                2018-01-10
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h2 id="从最近的两部电影说起"><a href="#从最近的两部电影说起" class="headerlink" title="从最近的两部电影说起"></a>从最近的两部电影说起</h2><p> 刚把手放在键盘上的时候，想了想该如何说电影呢？想起自己前段时间看过的两部电影 ，一部最近很热的《芳华》，由冯小刚导演推出，另一部《年轻气盛》，是一部外国电影，唯美至极。很巧的是，这两部电影的英文名是一样的，都叫《youth》；更巧的是，这两都电影给了同一个情感的冲击，让我对电影这一立体的表现形式，更加折服。</p>
-<blockquote>
-<p>《芳华》</p>
-</blockquote>
-<p><img src="http://n.sinaimg.cn/translate/w373h557/20171219/aImY-fypvuqe0641452.jpg" alt=""></p>
-<p>这张图是芳华的剧照，也就是在看到这一片段的时候，我再也无法抑制自己的情感，泪如雨下，哭了出来！<br>在看完芳华以后，我长时间地停留在某种感动之中，久久不能平复。后有跑到冯导微博上去，看各类观众对该电影的评价，以及和电影相关的报道。要知道，一旦一个人对某个作品或某件事产生情感上的关联后，就需要找到一个分享或分担的窗口，并且情感越浓烈这种需求就越迫切。我便是如此。<br>芳华讲述的故事主要发生在上世纪七十年代，那是一个残酷和荒蛮的时代，也是一个柔软和脆弱的时代，正式因为有这样一种大时代特定的笼罩，整部电影便更显深情和悲怆！ 冯导一直说，这是拍给他们那个岁数的人看的，并且这部电影浓缩了他所经历那个时代的美好，现在他想将它呈现出来！社会反应也好像确实如此，他那个年龄段的很多人很长时间不进电影院的，也跑到电影院去看了。但是，我想说的是，虽然我们这个年龄的人虽然没有亲身经历，可并不影响我们来感受这部戏剧所蕴含的力量。艺术作品的神奇之处就在于此，你并不需要亲身经历，你只需要用心体会，全力沉浸，你就能感受到非凡之美。当然 ，我并不否认，对于亲身经历过那个年代的人来说，这部戏会更具感染力。<br>电影的剧情我并不想多说，一者我不想剧透，二者我认为该电影的成功并不在于剧情。与很多成功的艺术作品一样，在观看完影片以后，总会有几个片段深深的刻在脑子里，挥之不去，萦萦回回。正如，读完一本书之后，总有某一段话让你记忆犹新，不能忘怀；正如你交一个朋友，她在某个时候的笑脸总会在不经意间在你脑海翻腾；也如你过完一年的生活后，回望过去的一年，值得怀念的那些时刻也在脑海长久徘徊。大概很多美好的作品或事情就是这样，它或许并不是十全十美，但是也就那么几个瞬间，它稳稳地抓住了你的心，并且给予猛烈的冲击，让你猝不及防，无法闪躲，你只能默然承受，报之以热泪盈眶。<br>除了刚才提到的一个片段，电影最后一个片段我也很喜欢，它让人心安，让人欣慰！</p>
-<p><img src="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=3714108987,2395348688&amp;fm=175&amp;s=DA103CC5E60119452427A4260300604B&amp;w=539&amp;h=386&amp;img.JPEG" alt=""></p>
-<p>顺便提一句，电影的片尾曲《绒花》也非常好听，是歌手韩红在看完该影片以后怀着真挚的感情来唱的，并且她还主动要求不收费。</p>
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=238816&auto=1&height=66"></iframe>
-
-
-<blockquote>
-<p>《年轻气盛》</p>
-</blockquote>
-<p> <img src="https://img3.doubanio.com/view/photo/m/public/p2241441695.jpg" alt=""></p>
-<p>上面这张图是该影片的海报，是不是非常具有诱惑力! 刚开始听到这部电影的时候，我很想看；看到这个海报的时候，又不想看了。原因是，即使电影中有裸露的镜头，也不用这么浮夸挂在海报上吗，明显就是恶俗的宣传。就像我们的很多网站一样，为了骗得点击率，搞些标题党，或是干脆挂着一些重口味图片。<br>可就在前段时间，我看了这部电影。因为它已经在各种场合中处在在我的眼前，不停的有人向我推荐它。想必定非凡品！既然如此，那就静下心来好好欣赏一下。<br>也许是电影想说的东西太多，也许是我能够接受的东西太少。看电影的时候，我觉得很多台词非常好，即不失深刻，也不显生硬。但是我还是每记住！ 能记住的是电影画面的唯美，有点像当时看BBC纪录片《地球脉动》一般的感受 ，后来我发现，这部电影哪怕你不去思考剧情，全然当作一步景色欣赏的纪录片来看，也会是一部不差的作品。</p>
-<p> <img src="https://pic3.zhimg.com/50/23c30d64843f296b627162ac4b6f5f1a_hd.jpg" alt=""></p>
-<p> 电影的主角是两位年过七旬的老人，主题自然少不了对生命和人生的探索。但给我印象至深的也只有两个片段，第一便是海报伤的那一个镜头。哈哈，确实很美！ 其二 ，是剧中红衣僧侣飘起来的那一个镜头，音乐响起，像是证明额什么，也像是战胜了什么。</p>
-<p> 最后，还要补充一下，决定看这部电影很大一部原因是是因为片中的女主角蕾切尔·薇兹，一个美极了的女人。我是在看了她演的《兵临城下》之后，彻底被她俘虏的。</p>
-<p> <img src="http://e.hiphotos.baidu.com/baike/pic/item/f703738da9773912cfe13c0ef8198618377ae29e.jpg" alt=""></p>
-<blockquote>
-<p>艺术的朦胧感</p>
-</blockquote>
-<p>好的，分别说了一下这两部电影后，借此谈谈我对电影艺术一点点小的看法。<br>我发现很多观众在看完一部电影之后，喜欢追问某一个细节安排所指为何？其实，我最初也是如此。花了两个多小时看一部电影，总觉得要把一部电影吃透才行，所以应该弄清楚电影每个情节安排的动机。<br>看了一定数量的电影之后，才逐渐知道，追问这些细节具体所指️是没有意义的。我更相信，诸多电影看其蹊跷的情节其实是没有指向的，这些情节于剧情发展没有明显作用。把它们从电影中摘除，好像也并没有什么不妥之处。可它们就被导演安插在电影里。在我看来，这是导演刻意的模糊化，旨在给电影造成一种朦胧感，从而是电影更加立体，让作品更具想象力。<br>艺术品之所已能够引起广泛地共鸣，很大程度上源于它的朦胧感，以及朦胧感造成的立体感。作者一般在风格和情感上有了表述以后，又故意给作品留下一块空地，是留给每个观众的。每个观众通过在这块空地上投放自己的情感和想象，从而和作品产生紧密的联系和更加深刻的共鸣，这就是艺术的非凡之处。正因如此，我们才会发现，有的作品大家都喜欢，但是我们对作品的看法却不经相同，欣赏的片段也千差万别。<br>在我看来，这种情节上的朦胧化并非电影所特有，其他的艺术作品也同样采取了一定的方式制造朦胧感。例如，绘画中印象派和写意派的作品 ，不在乎形似却保持神似，或是浓墨重彩，或是蜻蜓点水，不拘一格；再比如诗歌中的句子，“蓦然回首，那人却在灯火阑珊处”，若影若现，如需如幻，让人动容！</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/01/09/moive/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="knight-luo">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="knight-luo’s heaven">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/01/09/moive/" itemprop="url">漫说电影</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Veröffentlicht am</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-01-09T00:00:00+08:00">
-                2018-01-09
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p> 电影产业发展至今已几乎有上百年的历史 ，其中不乏优秀的作品，单是豆瓣伤的推荐，已经让人目不暇接。亚洲的，美国的，欧洲的，古典的，现代的，浪漫的，现实的，冒险的，追梦的，言情的，动作的，搞笑的，煽情的……哇，层出不穷！ 加上最近二十年大量的科学技术融入到电影产业，使电影有了更加丰富的表现手法！<br> 我特别喜欢电影，从记事开始，从接触到电影这个概念开始，便对它无比着迷。之前不明白因为什么喜欢，也没有去深思细想为什么喜欢。直到听到晓松讲起来，电影有造梦的功能，它可以治愈，可以共鸣，可以讲述。它像一个观察世界的窗口，也想一位有诚意的朋友，告诉你它的思考，展示你它的美好，毫不保留，干净利落。当然，这样的赞美之词仅仅适用于好的电影，好的电影就是你觉得好的！<br> 发现自己热爱电影后，我一度陷入疯狂，希望阅遍天下好的电影，以此填补我空虚的时间。可后来我冷静下来了，我发现哪怕我用尽自己所有的时间都不一定能够看得完现有的电影，更别说现在蓬勃发展的电影产业，每年都有优秀的作品产出。所以，我决定用自己有限的时间，去寻找，去网罗最好的电影来看，来获得飞一般的体验。<br> 截止到现在，我绝大的好的电影基本上有三个点的要素：</p>
-<ul>
-<li>剧本和导演</li>
-<li>角色演员</li>
-<li>配乐</li>
-</ul>
-<blockquote>
-<p>剧本和导演</p>
-</blockquote>
-<p>对于电影来说，剧本和导演两者相辅相成。如果把剧本必做食材的话，导演则是厨师。上乘的电影，几乎都是优秀的剧本与伟大导演结合的产物。因此，我想也想在今后的分享中，讲讲自己目前最喜欢的导演。当然，所有的排名或评价都属于个人观点。</p>
-<p><img src="https://img3.doubanio.com/view/celebrity/s_ratio_celebrity/public/p40835.jpg" alt=""></p>
-<blockquote>
-<p>角色演员</p>
-</blockquote>
-<p>对于每一个观影的人来说，电影最初的吸引大概就是来源于演员本身了，虽然每个演员的成就断然少不了无数幕后工作者的付出，但是，演员作为作品的呈现者，与观众的距离最近，更别说如今广告铺天盖地，更让我们对那些熟悉的演员充满了窥探的欲望。还有，演员大多面目俊朗，神采清秀，本身就是一种美的存在，这对于生活在营营扰扰的普罗大众来说本身就具有一种神奇的吸引力。就拿自己来说，小时候看还珠格格，非常喜欢，也深受感动，从中也认识了赵薇、林心如、范冰冰、苏有朋等演员，今后只要发现有他们参演的作品，便预先给加了分，欣赏的时候也增添了一份情切感。 这也是为什么每个演员都渴望多露脸，从而更快被观众朋友接受。当然，不是每部好的电影都需要当红的明星来承托的。</p>
-<p><img src="https://b-ssl.duitang.com/uploads/item/201604/15/20160415104349_3aziZ.gif" alt=""></p>
-<blockquote>
-<p>音乐</p>
-</blockquote>
-<p>第三个要素，就是音乐。<br>说来惭愧，我是看了好多好多电影以后才发现音乐在电影中起到的不可替代的作用。不过，这也不能全怪我，还得说是这些配乐工作者陪地太好了，让我觉得这些音乐本该已那种方式在那一时刻想起，旋律不急不慢，情感不骄不躁，浑然天成，让欣赏者几乎不能察觉。<br>音乐，本身就是艺术的一个门类。与其他艺术门类不同的是，音乐是唯一可以证明人类有灵魂的东西，它全让好似人类精神美学的产物，而不是通过改变现有物质的存在状态来创造。也正是电影，这样一个综合性的艺术门类，机智地将音乐纳入其中，让那些投射在荧幕伤的故事更加生动传神、灵秀动人。</p>
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=25892498&auto=1&height=66"></iframe>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/01/08/main/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="knight-luo">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="knight-luo’s heaven">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/01/08/main/" itemprop="url">i am luo</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Veröffentlicht am</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-01-08T00:00:00+08:00">
-                2018-01-08
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>这是我的第一个个人网站。<br>做网站是偶然的一个想法，我是一个闲不住的人，要么看书，要么出去爬山。所谓说，身体和心灵总要有一个在路上，大概就是这个含义吧。<br>偶然的机会，受笑来老师的感召，自己也就跟着试了试。当然，在次我还是得宣传一下<br><a href="http://lixiaolai.com/2016/06/22/makecs-build-a-blog-with-hexo-on-github/" target="_blank" rel="noopener">笑来</a>老师的网站。老师说，这个是到有三样东西是必须学会的： 写作；英语；编程。我信他的话，因此也开始亦步亦趋地学了起来。</p>
-<p>做网站，旨在分享。分享，即告诉一些对大家有用的东西。回想起自己平实有无华的人生精力，没有精彩的奋斗史，没有浪漫的爱情史，更没有值得搬到网上的个人作品。虽然自己也尝试过写作写诗，但是在看到了一些好的作平之后，我仍是严重意识到自己的水平有限。说起来惭愧，在校园里晃荡了将近二十年，仍未找到可以投放自己所有生命力的平台和窗口。所能做的，仅仅是怀着不安，在繁忙的街道中不停地寻找着。</p>
-<p>世界纷纷扰扰，花朵纷纷扬扬。虽然自己目前没有好的作品，但在不长的学习时光里，有幸接触到世界各地的优秀作品。我没有偏爱某一种特定的艺术门类，反倒兴趣广泛，喜欢看电影，读书，听音乐。每次遇到自己喜欢的作品，都感动不已，感慨艺术的细腻与博爱，感叹艺术创作者的精湛与浩大，在体验之后，更是热烈地想找一位分享的对象，告诉她，我今天又发现了一个非常好的作品。</p>
-<p>因此，我计划利用本网站，作为我分享自己目前所遇到的一些好的作品，突题材不限，大致可以分为「电影」、「图书」、「音乐」三个大类，同时会根据日后的学习和工作对板块作以调整。</p>
-<p>如果有过分享经验的人，一定知道，分享绝不是一个“无私”的举动。虽然，分享的目的在于告知对方某些有用的信息，但是最大的受益者其实是分享者本人。分享，是一个输出的过程，首先需要整理自己的思绪，然后有条理地将它表述出来。很多事情，不去认真思考，你就不会有新的发现和更深的认识。而分享，则是让自己经进一步地整理和思考自己将要分享的作品。并有机会获得外界的评论，即使矫正自己思维上的缺漏和不足。由此可知，分享，是一个利人更利己的事情。<br>最后，愿和走进网站的朋友一起感受经典的美好和诚挚！</p>
-<h2 id="peter-jackson"><a href="#peter-jackson" class="headerlink" title="peter jackson"></a>peter jackson</h2><ul>
-<li>《金刚》</li>
-<li>《可爱的骨头》</li>
-<li>《布达佩斯大饭店》</li>
-<li>《赎罪》</li>
-</ul>
-<p>因为高晓松的推荐，我对<a href="https://baike.baidu.com/item/西尔莎·罗南/7543753" target="_blank" rel="noopener">西尔莎·罗南</a>这个女演员充满了兴趣。利用周末时间接连看了两部她的戏。很奇怪，看完之后喜欢极了。只是不太确定，这种喜欢到底是因为早已怀有的好感，还是体验之后的感受的惊喜。<br>说到这里必须给大家看上一张图<br><a href="http://www.dy2018.com/html/gndy/dyzz/20100404/25397.html" target="_blank" rel="noopener">可爱的骨头</a><br><img src="http://tupian.baike.com/ipad/a0_08_62_01300000764046127311629279617_jpg.html）" alt=""></p>
-<p>不知到你看到这张图片有什么感受，什么想法，反正我看到之后我就想看。<br>我看到了网上很多有关这部电影的评论，这也是我的一个习惯，每次看到自己喜欢的作品，就喜欢到网上自己</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/01/02/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="knight-luo">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="knight-luo’s heaven">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/01/02/hello-world/" itemprop="url">Hello Haijing</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Veröffentlicht am</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-01-02T20:56:26+08:00">
-                2018-01-02
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-  </section>
-
-  
-
-
-          </div>
-          
-
-
-          
-
-        </div>
-        
-          
-  
-  <div class="sidebar-toggle">
-    <div class="sidebar-toggle-line-wrap">
-      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
-    </div>
-  </div>
-
-  <aside id="sidebar" class="sidebar">
-    
-    <div class="sidebar-inner">
-
-      
-
-      
-
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
-        <div class="site-overview">
-          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-            
-              <p class="site-author-name" itemprop="name">knight-luo</p>
-              <p class="site-description motion-element" itemprop="description">这是我的个人博客 我会在里面分享自己看过好的艺术作品，包括书目，电影和音乐，同时也会谈谈自己对这些作品的简单看法。我是非艺术专业出身，写博客纯属个人爱好，博客内容也全属个人观点（包括我自己听来或看来，觉尚可的观点）。博客的主旨在分享，但不限于次，更新内容可能会因日后生活或工作发生改变。</p>
-          </div>
-
-          <nav class="site-state motion-element">
-
-            
-              <div class="site-state-item site-state-posts">
-              
-                <a href="/archives/">
-              
-                  <span class="site-state-item-count">5</span>
-                  <span class="site-state-item-name">Artikel</span>
-                </a>
-              </div>
-            
-
-            
-
-            
-              
-              
-              <div class="site-state-item site-state-tags">
-                
-                  <span class="site-state-item-count">3</span>
-                  <span class="site-state-item-name">Tags</span>
-                
-              </div>
-            
-
-          </nav>
-
-          
-
-          
-
-          
-          
-
-          
-          
-
-          
-
-        </div>
-      </section>
-
-      
-
-      
-
-    </div>
-  </aside>
-
-
-        
-      </div>
-    </main>
-
-    <footer id="footer" class="footer">
-      <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
-  <span class="with-love">
-    <i class="fa fa-user"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">knight-luo</span>
-
-  
-</div>
-
-
-  <div class="powered-by">Erstellt mit  <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
-
-
-
-  <span class="post-meta-divider">|</span>
-
-
-
-  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
-
-
-
-
-        
-
-
-
-
-
-
-
-        
-      </div>
-    </footer>
-
-    
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
-    
-
-    
-
-  </div>
-
-  
-
-<script type="text/javascript">
-  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
-    window.Promise = null;
-  }
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        // CLOSE
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        // OPEN
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
 </script>
 
 
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-  
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
-
-
-
-  
-  
-
-  
-
-  
-
-
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
-
-
-
-  
-
-
-  
-
-
-
-
-	
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-  
-
-  
-
-  
-  
-
-  
-
-  
-
-  
+    <!-- Main Content -->
+    <!-- Main Content -->
+<div class="container">
+    <div class="row">
+        
+
+<!-- USE SIDEBAR -->
+    <!-- Post Container -->
+            <div class="
+                col-lg-8 col-lg-offset-1
+                col-md-8 col-md-offset-1
+                col-sm-12
+                col-xs-12
+                post-container
+            ">
+            
+                <!-- Main Content -->
+
+
+<div class="post-preview">
+
+    <a href="/2018/01/11/actress1/">
+        <h2 class="post-title">
+            actress1
+        </h2>
+        <h3 class="post-subtitle">
+            
+        </h3>
+        <div class="post-content-preview">
+            沉沦——从你开始...
+        </div>
+    </a>
+    
+        <p class="post-meta">
+            Posted by knight-luo on
+            2018-01-11
+        </p>
+    
+
+</div>
+<hr>
+
+<div class="post-preview">
+
+    <a href="/2018/01/10/youth/">
+        <h2 class="post-title">
+            朦胧 —— 方成艺术
+        </h2>
+        <h3 class="post-subtitle">
+            
+        </h3>
+        <div class="post-content-preview">
+            从最近的两部电影说起 刚把手放在键盘上的时候，想了想该如何说电影呢？想起自己前段时间看过的两部电影 ，一部最近很热的《芳华》，由冯小刚导演推出，另一部《年轻气盛》，是一部外国电影，唯美至极。很巧的是，这两部电影的英文名是一样的，都叫《youth》；更巧的是，这两都电影给了同一个情感的冲击，让我对电影这一立体的表现形式，更加折服。
+
+《芳华》
+
+
+这张图是芳华的剧照，也就是在看到这一片段的时候......
+        </div>
+    </a>
+    
+        <p class="post-meta">
+            Posted by knight-luo on
+            2018-01-10
+        </p>
+    
+
+</div>
+<hr>
+
+<div class="post-preview">
+
+    <a href="/2018/01/09/moive/">
+        <h2 class="post-title">
+            漫说电影
+        </h2>
+        <h3 class="post-subtitle">
+            
+        </h3>
+        <div class="post-content-preview">
+             电影产业发展至今已几乎有上百年的历史 ，其中不乏优秀的作品，单是豆瓣伤的推荐，已经让人目不暇接。亚洲的，美国的，欧洲的，古典的，现代的，浪漫的，现实的，冒险的，追梦的，言情的，动作的，搞笑的，煽情的……哇，层出不穷！ 加上最近二十年大量的科学技术融入到电影产业，使电影有了更加丰富的表现手法！ 我特别喜欢电影，从记事开始，从接触到电影这个概念开始，便对它无比着迷。之前不明白因为什么喜欢，也没......
+        </div>
+    </a>
+    
+        <p class="post-meta">
+            Posted by knight-luo on
+            2018-01-09
+        </p>
+    
+
+</div>
+<hr>
+
+<div class="post-preview">
+
+    <a href="/2018/01/08/main/">
+        <h2 class="post-title">
+            i am luo
+        </h2>
+        <h3 class="post-subtitle">
+            
+        </h3>
+        <div class="post-content-preview">
+            这是我的第一个个人网站。做网站是偶然的一个想法，我是一个闲不住的人，要么看书，要么出去爬山。所谓说，身体和心灵总要有一个在路上，大概就是这个含义吧。偶然的机会，受笑来老师的感召，自己也就跟着试了试。当然，在次我还是得宣传一下笑来老师的网站。老师说，这个是到有三样东西是必须学会的： 写作；英语；编程。我信他的话，因此也开始亦步亦趋地学了起来。
+做网站，旨在分享。分享，即告诉一些对大家有用的东西......
+        </div>
+    </a>
+    
+        <p class="post-meta">
+            Posted by knight-luo on
+            2018-01-08
+        </p>
+    
+
+</div>
+<hr>
+
+<div class="post-preview">
+
+    <a href="/2018/01/02/hello-world/">
+        <h2 class="post-title">
+            Hello Haijing
+        </h2>
+        <h3 class="post-subtitle">
+            
+        </h3>
+        <div class="post-content-preview">
+            Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
+Qu......
+        </div>
+    </a>
+    
+        <p class="post-meta">
+            Posted by knight-luo on
+            2018-01-02
+        </p>
+    
+
+</div>
+<hr>
+
+
+
+<!-- Pager -->
+
+<ul class="pager">
+    
+    
+</ul>
+
+
+
+                <!-- 如果开启评论功能 -->
+                
+            </div>
+
+          <!-- Sidebar Container -->
+<div class="
+    col-lg-3 col-lg-offset-0
+    col-md-3 col-md-offset-0
+    col-sm-12
+    col-xs-12
+    sidebar-container
+">
+    
+        <!-- Featured Tags -->
+
+        <hr>
+    
+        <!-- Short About -->
+<section class="visible-md visible-lg">
+    <h5><a href="/about/">ABOUT ME</a></h5>
+    <div class="short-about">
+
+        
+
+        
+
+        <!-- SNS Link -->
+        <ul class="list-inline">
+            
+            
+            
+
+            
+
+            
+
+            
+            
+            
+            
+        </ul>
+    </div>
+</section>
+        <hr>
+    
+        
+  <h5>RECENT POSTS</h3>
+  <div class="widget">
+    <ul>
+      
+        <li>
+          <a href="/2018/01/11/actress1/">actress1</a>
+        </li>
+      
+        <li>
+          <a href="/2018/01/10/youth/">朦胧 —— 方成艺术</a>
+        </li>
+      
+        <li>
+          <a href="/2018/01/09/moive/">漫说电影</a>
+        </li>
+      
+        <li>
+          <a href="/2018/01/08/main/">i am luo</a>
+        </li>
+      
+        <li>
+          <a href="/2018/01/02/hello-world/">Hello Haijing</a>
+        </li>
+      
+    </ul>
+  </div>
+
+        <hr>
+    
+        <!-- Friends Blog -->
+
+        <hr>
+    
+</div>
+
+        
+    </div>
+</div>
+
+
+    <!-- Footer -->
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                
+                
+                
+
+                
+
+                
+
+                
+
+                
+
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; knight-luo 2018 
+                    <br>
+                    Theme by <a href="http://huangxuan.me">Hux</a> 
+                    <span style="display: inline-block; margin: 0 5px;">
+                        <i class="fa fa-heart"></i>
+                    </span> 
+                    re-Ported by <a href="http://beantech.org">BeanTech</a> | 
+                    <iframe
+                        style="margin-left: 2px; margin-bottom:-5px;"
+                        frameborder="0" scrolling="0" width="91px" height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=YenYuHsuan&repo=hexo-theme-beantech&type=star&count=true" >
+                    </iframe>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/hux-blog.min.js"></script>
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!-- 
+     Because of the native support for backtick-style fenced code blocks 
+     right within the Markdown is landed in Github Pages, 
+     From V1.6, There is no need for Highlight.js, 
+     so Huxblog drops it officially.
+
+     - https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0  
+     - https://help.github.com/articles/creating-and-highlighting-code-blocks/    
+-->
+<!--
+    <script>
+        async("http://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function(){
+            hljs.initHighlightingOnLoad();
+        })
+    </script>
+    <link href="http://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet">
+-->
+
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async("http://yoursite.com/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("https://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+<!-- Google Analytics -->
+
+
+
+
+<!-- Baidu Tongji -->
+
+
+
+
+
+
+	<a id="rocket" href="#top" class=""></a>
+	<script type="text/javascript" src="/js/totop.js?v=1.0.0" async=""></script>
+    <script type="text/javascript" src="/js/toc.js?v=1.0.0" async=""></script>
+<!-- Image to hack wechat -->
+<img src="http://yoursite.com/img/icon_wechat.png" width="0" height="0" />
+<!-- Migrate from head to bottom, no longer block render and still work -->
 
 </body>
+
 </html>
